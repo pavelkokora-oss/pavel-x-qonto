@@ -291,6 +291,10 @@
   .lockup { align-items:center; }
   body > footer { display:none; }
   .cta .actions .btn:not(.ghost) { background:transparent; color:var(--dark-ink); border:1px solid color-mix(in srgb, var(--dark-ink) 35%, transparent); }
+  .snaps figure:nth-child(n) { grid-column:span 2; }
+  .snaps figure:nth-child(-n+2) img { aspect-ratio:4/3; }
+  .snaps figure:nth-child(n+3) figcaption { color:#050505; }
+  @media (max-width:760px) { .snaps figure:nth-child(n) { grid-column:auto; } }
 </style>
 </head>
 <body>
@@ -372,14 +376,14 @@
 <section class="band snaps" id="proof">
   <div class="wrap">
     <p class="kicker">Snapshots from Praktika.ai and GaleAI</p>
-    <div class="snap-grid"><figure><img loading="lazy" src="https://snazzy-axolotl-240e64.netlify.app/praktika-demo-tv.jpg" alt="Praktika.ai demo for investors and clients (FIRST PROD VERSION)"><figcaption>Praktika.ai demo for investors and clients (FIRST PROD VERSION)</figcaption></figure><figure><img loading="lazy" src="https://snazzy-axolotl-240e64.netlify.app/praktika-demo.jpg" alt="Praktika.ai demo for investors and clients (MVP)"><figcaption>Praktika.ai demo for investors and clients (MVP)</figcaption></figure><figure><img loading="lazy" src="https://snazzy-axolotl-240e64.netlify.app/galeai-pitch-room.jpg" alt="Pitching GaleAI to investors"><figcaption>Pitching GaleAI to investors</figcaption></figure><figure><img loading="lazy" src="https://snazzy-axolotl-240e64.netlify.app/galeai-pitch-ask.jpg" alt="Pitching GaleAI to investors"><figcaption>Pitching GaleAI to investors</figcaption></figure><figure><video controls playsinline preload="metadata" src="https://snazzy-axolotl-240e64.netlify.app/galeai-pitch.mp4"></video><figcaption>GaleAI: first video pitch deck</figcaption></figure></div>
+    <div class="snap-grid"><figure><img loading="lazy" src="https://snazzy-axolotl-240e64.netlify.app/praktika-demo-tv.jpg" alt="Praktika.ai demo for investors and clients (FIRST PROD VERSION)"><figcaption>Praktika.ai demo for investors and clients (FIRST PROD VERSION)</figcaption></figure><figure><img loading="lazy" src="https://snazzy-axolotl-240e64.netlify.app/praktika-demo.jpg" alt="Praktika.ai demo for investors and clients (MVP)"><figcaption>Praktika.ai demo for investors and clients (MVP)</figcaption></figure><figure><img loading="lazy" src="https://snazzy-axolotl-240e64.netlify.app/galeai-pitch-room.jpg" alt="Pitching GaleAI to investors"><figcaption>Pitching GaleAI to investors</figcaption></figure></div>
   </div>
 </section>
 <section class="band dark cta" id="contact">
   <div class="wrap">
     <h2>So… shall we talk?</h2>
     <div class="actions">
-      <a class="btn" href="mailto:pavel.kokora@gmail.com">Email me</a>
+      <a class="btn ghost" href="mailto:pavel.kokora@gmail.com">Email me</a>
       <a class="btn ghost" href="https://t.me/pavelkokora" target="_blank" rel="noopener">Telegram</a>
       <a class="btn ghost" href="https://www.linkedin.com/in/pavel-kokora/" target="_blank" rel="noopener">LinkedIn</a>
       <a class="btn ghost" href="Pavel_Kokora_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
